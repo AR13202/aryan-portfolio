@@ -358,7 +358,7 @@ export default function Home() {
           yPercent: -50,
           left: "50%",
           top: "50%",
-          scale: 0.8,
+          scale: 0.08,
           opacity: 0
         });
 
@@ -395,7 +395,7 @@ export default function Home() {
         // Stage 3: Crab photo lens appears with fade-in (0.45 to 0.65 progress)
         planetTimeline.to(".planet-lens", {
           opacity: 1,
-          scale: 1,
+          scale: 0.08,
           duration: 0.2,
           ease: "power2.inOut"
         }, 0.45);
@@ -406,8 +406,9 @@ export default function Home() {
 
         // Expand the lens to cover the entire screen
         planetTimeline.to(".planet-lens", {
-          scale: 45,
+          scale: 1.0,
           borderRadius: 0,
+          borderWidth: 0,
           duration: zoomDuration,
           ease: "power1.in"
         }, zoomStart);
@@ -694,10 +695,10 @@ export default function Home() {
               <span className="word-for-the">have an</span>
               <span className="planet-lens">
                 <Image
-                  src="/images/planet/crab.png"
-                  alt="Idea focus"
+                  src="/images/planet/solarsystem-center.png"
+                  alt="Solar System Focus"
                   fill
-                  sizes="(max-width: 900px) 80px, 120px"
+                  unoptimized
                   priority
                 />
               </span>
@@ -708,52 +709,52 @@ export default function Home() {
           <div className="planet-tiles">
             {/* Tile 1: Mantis */}
             <div className="planet-tile tile-mantis" data-depth="0.15">
-              <Image src="/images/planet/mantis.png" alt="Mantis" fill sizes="150px" />
+              <Image src="/images/planet/ikarusdelta-dark-dashboard.png" alt="Ikarus 3D Client Dashboard" fill unoptimized />
             </div>
 
             {/* Tile 2: Mountain Forest */}
             <div className="planet-tile tile-mountain-forest" data-depth="0.3">
-              <Image src="/images/planet/mountain_forest.png" alt="Mountain Forest" fill sizes="200px" />
+              <Image src="/images/planet/inv-dashboard.png" alt="InvPro Inventory Dashboard" fill unoptimized />
             </div>
 
             {/* Tile 3: Forest Trail */}
             <div className="planet-tile tile-forest-trail" data-depth="0.25">
-              <Image src="/images/planet/forest_trail.png" alt="Forest Trail" fill sizes="150px" />
+              <Image src="/images/planet/ppf-cyber.png" alt="PPF Cybertruck Customizer" fill unoptimized />
             </div>
 
             {/* Tile 4: Leaf Macro */}
             <div className="planet-tile tile-leaf-macro" data-depth="0.4">
-              <Image src="/images/planet/leaf_macro.png" alt="Leaf Macro" fill sizes="150px" />
+              <Image src="/images/planet/alliance-landing.png" alt="Alliance Corporate Platform" fill unoptimized />
             </div>
 
             {/* Tile 5: Underwater */}
             <div className="planet-tile tile-underwater" data-depth="0.2">
-              <Image src="/images/planet/underwater.png" alt="Underwater night view" fill sizes="200px" />
+              <Image src="/images/planet/ikarusdelta-bathtub.png" alt="Ikarus 3D Configurator Editor" fill unoptimized />
             </div>
 
             {/* Tile 6: Dragonfly */}
             <div className="planet-tile tile-dragonfly" data-depth="0.35">
-              <Image src="/images/planet/dragonfly.png" alt="Dragonfly macro" fill sizes="200px" />
+              <Image src="/images/planet/mattress-exploded.png" alt="Mattress Exploded Layers" fill unoptimized />
             </div>
 
             {/* Tile 7: Mystic Forest */}
             <div className="planet-tile tile-mystic-forest" data-depth="0.1">
-              <Image src="/images/planet/mystic_forest.png" alt="Mystic forest clearing" fill sizes="150px" />
+              <Image src="/images/planet/ikarusdelta-analytics.png" alt="Ikarus 3D Analytics Dashboard" fill unoptimized />
             </div>
 
             {/* Tile 8: Bird Clouds (Top Right) */}
             <div className="planet-tile tile-bird-clouds-1" data-depth="0.2">
-              <Image src="/images/planet/bird_clouds.png" alt="Bird flying in clouds" fill sizes="150px" />
+              <Image src="/images/planet/active-selector.png" alt="3D Desk Customizer Selector" fill unoptimized />
             </div>
 
             {/* Tile 9: Space Mountain */}
             <div className="planet-tile tile-space-mountain" data-depth="0.3">
-              <Image src="/images/planet/space_mountain.png" alt="Space mountain range" fill sizes="200px" />
+              <Image src="/images/planet/inv-outstanding.png" alt="InvPro Outstanding Payments" fill unoptimized />
             </div>
 
             {/* Tile 10: Bird Clouds (Bottom Right) */}
             <div className="planet-tile tile-bird-clouds-2" data-depth="0.45">
-              <Image src="/images/planet/bird_clouds.png" alt="Bird silhouette in clouds" fill sizes="150px" />
+              <Image src="/images/planet/ppf-landing.png" alt="PPF Customizer Landing" fill unoptimized />
             </div>
           </div>
         </section>

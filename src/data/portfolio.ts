@@ -65,33 +65,43 @@ export const portfolioData: PortfolioData = {
       company: "Ikarus 3D",
       name: "SaaS Configurator & Analytics Dashboard",
       year: "2024 - 2026",
-      tags: ["Next.js", "Cognito RBAC", "AWS Lambda", "DynamoDB"],
+      tags: [
+        "Next.js",
+        "React",
+        "Three.js",
+        "Serverless",
+        "AWS Lambda",
+        "DynamoDB",
+        "TailwindCSS",
+        "Cognito",
+        "API Gateway"
+      ],
       link: "https://app.ikarusdelta.com/",
       metrics: [
         { val: "−40%", label: "Next.js bundle size reduction" },
         { val: "−30%", label: "Cold start latency optimization" }
       ],
       gradientClass: "p-gymondo1",
-      imagePath: "/images/ikarusdelta-case.png",
+      imagePath: "/images/ikarusdelta-case-v3.png",
       desc: "A performance-optimized SaaS dashboard featuring role-based access control (RBAC), serverless backend microservices, and cached database queries to minimize response times.",
       caption: "SaaS Dashboard"
     },
     {
-      id: "globetrotters",
+      id: "alliance-inventory",
       num: "02",
-      company: "Personal Project",
-      name: "GlobeTrotters Multiplayer Quiz",
-      year: "2024",
-      tags: ["Vite", "React", "Node.js", "Socket.io", "Express"],
-      link: "https://github.com/AR13202/GlobeTrotters",
+      company: "Alliance Engineering",
+      name: "InvPro - Enterprise Inventory Workspace",
+      year: "2026",
+      tags: ["Next.js", "TailwindCSS", "MySQL", "RBAC", "AI Scanning", "Ledger"],
+      link: "https://inventory.allianceengineeringco.com/login",
       metrics: [
-        { val: "Real-time", label: "Multiplayer room state synchronization" },
-        { val: "Low Latency", label: "WebSocket-based connection" }
+        { val: "AI-Powered", label: "Receipt & bill scanning with OCR" },
+        { val: "Real-Time", label: "Ledger calculations & RBAC security" }
       ],
-      gradientClass: "p-caixabank",
-      imagePath: "/images/globetrotters-case.png",
-      desc: "A real-time multiplayer quiz game using Socket.io and Node.js/Express with room-based state management, enabling seamless interactive gameplay for solo and group users.",
-      caption: "GlobeTrotters Quiz"
+      gradientClass: "p-gymondo1",
+      imagePath: "/images/inventory-case-v2.png",
+      desc: "An enterprise-grade workspace featuring a central Company's Ledger, role-based access control (RBAC), bill management with AI-powered scanning, and real-time analytical dashboards.",
+      caption: "Inventory System"
     },
     {
       id: "ppf-visualizer",
@@ -106,7 +116,7 @@ export const portfolioData: PortfolioData = {
         { val: "Optimized", label: "State synchronization & layout performance" }
       ],
       gradientClass: "p-zattoo",
-      imagePath: "/images/ppf-case.png",
+      imagePath: "/images/ppf-case-v2.png",
       desc: "An interactive web visualizer optimized for paint protection film customizations with smooth performance, centralized Zustand state management, and optimized asset loading.",
       caption: "PPF Visualizer"
     },
@@ -114,8 +124,8 @@ export const portfolioData: PortfolioData = {
       id: "alliance-engineering",
       num: "04",
       company: "Alliance Engineering",
-      name: "Premium Corporate Engineering Platform",
-      year: "2025",
+      name: "Company Portfolio Website",
+      year: "2026",
       tags: ["Next.js", "Vanilla CSS", "Responsive UI", "SEO"],
       link: "https://www.allianceengineeringco.com/",
       metrics: [
@@ -123,26 +133,26 @@ export const portfolioData: PortfolioData = {
         { val: "Pixel-Perfect", label: "Responsive design across all screen sizes" }
       ],
       gradientClass: "p-nt-onboarding",
-      imagePath: "/images/alliance-case.png",
+      imagePath: "/images/alliance-case-v3.png",
       desc: "High-performance corporate engineering platform optimized for search engine visibility, fast load times, and pixel-perfect responsiveness.",
-      caption: "Corporate Platform"
+      caption: "Company Portfolio"
     },
     {
-      id: "alliance-inventory",
+      id: "globetrotters",
       num: "05",
-      company: "Alliance Engineering",
-      name: "Internal Inventory Management System",
-      year: "2025",
-      tags: ["Fullstack", "Next.js", "MySQL", "RBAC"],
-      link: "https://inventory.allianceengineeringco.com/login",
+      company: "Personal Project",
+      name: "GlobeTrotters Multiplayer Quiz",
+      year: "2024",
+      tags: ["Vite", "React", "Node.js", "Socket.io", "Express"],
+      link: "https://github.com/AR13202/GlobeTrotters",
       metrics: [
-        { val: "Secure", label: "Role-Based Access Control & secure login" },
-        { val: "Optimized", label: "Database query caching & low latency" }
+        { val: "Real-time", label: "Multiplayer room state synchronization" },
+        { val: "Low Latency", label: "WebSocket-based connection" }
       ],
-      gradientClass: "p-gymondo1",
-      imagePath: "/images/inventory-case.png",
-      desc: "Secure business inventory manager with role-based access control, relational database schemas, and optimized query pipelines.",
-      caption: "Inventory System"
+      gradientClass: "p-caixabank",
+      imagePath: "/images/globetrotters-case-v2.png",
+      desc: "A real-time multiplayer quiz game using Socket.io and Node.js/Express with room-based state management, enabling seamless interactive gameplay for solo and group users.",
+      caption: "GlobeTrotters Quiz"
     },
     {
       id: "mattress-configurator",
@@ -157,7 +167,7 @@ export const portfolioData: PortfolioData = {
         { val: "E-Commerce", label: "Seamless checkout state integration" }
       ],
       gradientClass: "p-caixabank",
-      imagePath: "/images/mattress-case.png",
+      imagePath: "/images/mattress-case-v2.png",
       desc: "A premium web customizer engine for custom mattress configuration with real-time state synchronization and e-commerce checkout flow integration.",
       caption: "Mattress Configurator"
     },
@@ -174,25 +184,25 @@ export const portfolioData: PortfolioData = {
         { val: "Realistic", label: "Dynamic orbital paths & space lighting" }
       ],
       gradientClass: "p-zattoo",
-      imagePath: "/images/solarsystem-case.png",
+      imagePath: "/images/solarsystem-case-v3.png",
       desc: "An interactive solar system web visualization featuring realistic lighting, asteroid belts, and smooth transitions to explore planets in detail.",
       caption: "Solar System"
     },
     {
       id: "pricing-calculator",
       num: "08",
-      company: "AI SaaS Integration",
-      name: "AI-Powered Pricing & Quote Calculator",
+      company: "SaaS Integration",
+      name: "Interactive 3D Asset Pricing Calculator",
       year: "2025",
-      tags: ["Next.js", "AI Cost Algorithms", "React", "Responsive UI"],
+      tags: ["Next.js", "TailwindCSS", "Zustand", "Interactive UI"],
       link: "https://pricing-calculator-pi.vercel.app/",
       metrics: [
-        { val: "AI-Driven", label: "Dynamic resource pricing estimation" },
-        { val: "Instant", label: "Real-time quote breakdown charts" }
+        { val: "Interactive", label: "Dynamic 3D model pricing estimation" },
+        { val: "Instant", label: "Real-time quote breakdowns & discounts" }
       ],
       gradientClass: "p-nt-onboarding",
-      imagePath: "/images/pricing-calculator-case.png",
-      desc: "An AI-oriented SaaS resource pricing calculator featuring dynamic breakdown charts, configurable AI model metrics, and responsive state handling.",
+      imagePath: "/images/pricing-calculator-case-v2.png",
+      desc: "An interactive 3D model pricing calculator featuring dynamic cost breakdown cards, multi-category complexity options, variation scaling, and real-time discount calculations.",
       caption: "Pricing Calculator"
     },
     {
@@ -208,7 +218,7 @@ export const portfolioData: PortfolioData = {
         { val: "Flexible", label: "REST APIs for remote configurator embedding" }
       ],
       gradientClass: "p-gymondo1",
-      imagePath: "/images/active-case.png",
+      imagePath: "/images/active-case-v2.png",
       desc: "An embeddable configurator engine integrated with Shopify and Odoo e-commerce systems via custom REST APIs, expanding market reach.",
       caption: "Active Configurator"
     }
@@ -247,16 +257,11 @@ export const portfolioData: PortfolioData = {
       location: "Rajpura, Punjab, India",
       bullets: [
         "Specialized in Software Engineering, Data Structures & Algorithms, Object-Oriented Programming, and Databases.",
-        "Graduated with Academic Excellence Award and a CGPA of 9.90/10."
+        "Graduated with a CGPA of 9.90/10."
       ]
     }
   ],
   awards: [
-    {
-      title: "Chitkara University Academic Excellence Award",
-      issuer: "Chitkara University (CGPA 9.90/10)",
-      year: "2024"
-    },
     {
       title: "SDE Promotion to SDE-2",
       issuer: "Ikarus 3D (Led team of 6 engineers)",

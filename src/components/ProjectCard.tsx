@@ -57,7 +57,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               src={project.imagePath}
               alt={`${project.name} cover`}
               fill
-              sizes="(max-width: 900px) 100vw, 50vw"
+              unoptimized
               priority={project.num === "01"}
             />
           </div>

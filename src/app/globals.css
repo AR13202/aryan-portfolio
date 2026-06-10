@@ -1675,11 +1675,11 @@ nav .nav-links a.active::after {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: clamp(70px, 8vw, 120px);
-  height: clamp(48px, 5.5vw, 82px);
-  border-radius: 6px;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 75px;
   overflow: hidden;
-  border: 1px solid var(--border);
+  border: 12px solid var(--border);
   background: var(--bg2);
   will-change: transform, opacity;
   opacity: 0;
@@ -1720,77 +1720,77 @@ nav .nav-links a.active::after {
 @media (min-width: 900px) {
   .tile-mantis {
     top: 5%;
-    left: 20%;
-    width: 160px;
-    height: 110px;
+    left: 14%;
+    width: 270px;
+    height: 150px;
     z-index: 1;
   }
 
   .tile-mountain-forest {
     top: 10%;
-    left: 26%;
-    width: 150px;
-    height: 200px;
+    left: 24%;
+    width: 270px;
+    height: 150px;
     z-index: 2;
   }
 
   .tile-forest-trail {
     top: 30%;
-    left: 4%;
-    width: 130px;
-    height: 160px;
+    left: 2%;
+    width: 250px;
+    height: 140px;
   }
 
   .tile-leaf-macro {
     top: 75%;
-    left: 12%;
-    width: 160px;
-    height: 110px;
+    left: 8%;
+    width: 270px;
+    height: 150px;
     z-index: 2;
   }
 
   .tile-underwater {
-    top: 58%;
-    left: 23%;
-    width: 150px;
-    height: 200px;
+    top: 55%;
+    left: 20%;
+    width: 270px;
+    height: 150px;
     z-index: 1;
   }
 
   .tile-dragonfly {
     top: 66%;
-    left: 47%;
-    width: 150px;
-    height: 200px;
+    left: 45%;
+    width: 270px;
+    height: 150px;
   }
 
   .tile-mystic-forest {
     top: 35%;
     left: 71%;
-    width: 150px;
-    height: 110px;
+    width: 250px;
+    height: 140px;
   }
 
   .tile-bird-clouds-1 {
     top: 5%;
-    left: 78%;
-    width: 150px;
-    height: 110px;
+    left: 76%;
+    width: 250px;
+    height: 140px;
   }
 
   .tile-space-mountain {
     top: 55%;
-    left: 82%;
-    width: 150px;
-    height: 200px;
+    left: 78%;
+    width: 270px;
+    height: 150px;
     z-index: 1;
   }
 
   .tile-bird-clouds-2 {
     top: 73%;
-    left: 75%;
-    width: 140px;
-    height: 110px;
+    left: 73%;
+    width: 250px;
+    height: 140px;
     z-index: 2;
   }
 }
@@ -1799,77 +1799,77 @@ nav .nav-links a.active::after {
 
   .tile-mantis {
     top: 10%;
-    left: 8%;
-    width: 90px;
-    height: 60px;
+    left: 4%;
+    width: 140px;
+    height: 80px;
     z-index: 1;
   }
 
   .tile-mountain-forest {
     top: 15%;
-    left: 20%;
-    width: 85px;
-    height: 110px;
+    left: 18%;
+    width: 140px;
+    height: 80px;
     z-index: 2;
   }
 
   .tile-forest-trail {
     top: 40%;
     left: 2%;
-    width: 75px;
-    height: 95px;
+    width: 130px;
+    height: 75px;
   }
 
   .tile-leaf-macro {
     top: 80%;
-    left: 8%;
-    width: 95px;
-    height: 65px;
+    left: 4%;
+    width: 140px;
+    height: 80px;
     z-index: 2;
   }
 
   .tile-underwater {
     top: 65%;
-    left: 18%;
-    width: 85px;
-    height: 110px;
+    left: 15%;
+    width: 140px;
+    height: 80px;
     z-index: 1;
   }
 
   .tile-dragonfly {
     top: 74%;
-    left: 42%;
-    width: 85px;
-    height: 110px;
+    left: 38%;
+    width: 140px;
+    height: 80px;
   }
 
   .tile-mystic-forest {
     top: 45%;
-    left: 74%;
-    width: 90px;
-    height: 65px;
+    left: 70%;
+    width: 130px;
+    height: 75px;
   }
 
   .tile-bird-clouds-1 {
     top: 10%;
-    left: 74%;
-    width: 90px;
-    height: 65px;
+    left: 70%;
+    width: 130px;
+    height: 75px;
   }
 
   .tile-space-mountain {
     top: 60%;
-    left: 76%;
-    width: 85px;
-    height: 110px;
+    left: 72%;
+    width: 140px;
+    height: 80px;
     z-index: 1;
   }
 
   .tile-bird-clouds-2 {
     top: 76%;
-    left: 68%;
-    width: 85px;
-    height: 65px;
+    left: 64%;
+    width: 130px;
+    height: 75px;
     z-index: 2;
   }
 }
@@ -2118,10 +2118,13 @@ html.work-page-active body {
   height: 44px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 10px;
-  font-family: 'Brush Script MT', cursive;
-  font-size: 20px;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: #10233F;
 }
 
@@ -2129,17 +2132,12 @@ html.work-page-active body {
   color: #EDEDE8;
 }
 
-.caption-num {
-  font-weight: bold;
-  opacity: 0.7;
-}
-
 .caption-text {
-  flex: 1;
-  text-align: right;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
 }
 
 /* Mobile responsive styles (width < 900px) */

@@ -43,35 +43,33 @@ const slides: Slide[] = [
     num: project.num,
   })),
   {
-    company: "Explore & Connect",
+    company: "Connect & Collaborate",
     year: "Available for Hire",
     name: "Let's build something together!",
-    desc: "Explore my open-source experiments and technical architectures on GitHub, or download my resume and get in touch to discuss opportunities.",
-    tags: ["GitHub", "Resume", "Email", "SDE"],
+    desc: "Feel free to connect on LinkedIn to discuss full-stack software development engineering (SDE), custom web applications, or collaboration opportunities. You can also explore my open-source repositories on GitHub, download my resume, or get in touch via email.",
+    tags: ["LinkedIn", "GitHub", "Resume", "Email"],
     metrics: [
-      { val: "GitHub", label: "24+ active repositories" },
-      { val: "Email", label: "aryan2k2.13@gmail.com" },
+      { val: "LinkedIn", label: "Professional network & career updates" },
+      { val: "GitHub", label: "24+ active open-source projects" },
     ],
-    link: portfolioData.github,
-    image: "/images/planet/mystic_forest.png",
+    link: portfolioData.linkedin,
+    image: "/images/explore-connect.png",
     caption: "Explore & Connect",
     num: String(portfolioData.projects.length + 1).padStart(2, "0"),
   },
 ];
 
 const baseCoordinates = [
-  { cx: 100, cy: 225 },
-  { cx: 425, cy: 350 },
-  { cx: 750, cy: 350 },
-  { cx: 700, cy: 800 },
-  { cx: 350, cy: 800 },
-  { cx: 160, cy: 550 },
-  { cx: 140, cy: 1100 },
-  { cx: 460, cy: 1180 },
-  { cx: 780, cy: 1100 },
-  { cx: 820, cy: 1450 },
-  { cx: 500, cy: 1520 },
-  { cx: 180, cy: 1450 }
+  { cx: 180, cy: 250 },
+  { cx: 500, cy: 600 },
+  { cx: 820, cy: 950 },
+  { cx: 480, cy: 1300 },
+  { cx: 160, cy: 1650 },
+  { cx: 500, cy: 2000 },
+  { cx: 840, cy: 2350 },
+  { cx: 520, cy: 2700 },
+  { cx: 180, cy: 3050 },
+  { cx: 500, cy: 3400 }
 ];
 
 const cardRotations = [-6, 4, -5, 8, -8, 5, -4, 7, -6, 5, -5, 6];
@@ -82,7 +80,7 @@ const cardCoordinates = slides.map((_, i) => {
   const baseCoord = baseCoordinates[i % baseLen];
   return {
     cx: baseCoord.cx,
-    cy: baseCoord.cy + cycle * 1225
+    cy: baseCoord.cy + cycle * 3500
   };
 });
 
@@ -368,12 +366,15 @@ export default function WorkPage() {
               {idx === slides.length - 1 ? (
                 <div className="cf-email-row" style={{ display: "inline-flex", flexWrap: "wrap", alignItems: "center", gap: "12px" }}>
                   <a href={slide.link} target="_blank" rel="noopener noreferrer" className="cv-btn">
-                    View GitHub
+                    Connect on LinkedIn
                     <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
                       <path d="M2 12L12 2M12 2H4M12 2V10" />
                     </svg>
                   </a>
-                  <a href={`mailto:${portfolioData.email}`} className="cv-btn secondary-btn" style={{ marginLeft: "4px" }}>
+                  <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" className="cv-btn secondary-btn" style={{ marginLeft: "4px" }}>
+                    View GitHub
+                  </a>
+                  <a href={`mailto:${portfolioData.email}`} className="cv-btn secondary-btn">
                     Email Me
                   </a>
                   <button className={`copy-btn ${copied ? "copied" : ""}`} onClick={copyEmail} aria-label="Copy email">
@@ -434,13 +435,12 @@ export default function WorkPage() {
                             src={slide.image}
                             alt={slide.name}
                             fill
-                            sizes="240px"
+                            unoptimized
                             priority={index === 0}
                             className="polaroid-image"
                           />
                         </div>
                         <div className="polaroid-caption">
-                          <span className="caption-num">{slide.num}</span>
                           <span className="caption-text">{slide.caption}</span>
                         </div>
                       </div>

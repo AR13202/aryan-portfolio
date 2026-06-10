@@ -972,6 +972,14 @@ nav.scrolled {
   margin-top: 80px;
 }
 
+@media (min-width: 900px) {
+  .about-bio {
+    position: sticky;
+    top: 120px;
+    align-self: start;
+  }
+}
+
 .about-bio p {
   font-size: clamp(17px, 1.7vw, 22px);
   line-height: 1.62;

@@ -163,23 +163,23 @@ export default function AboutPage() {
       </nav>
 
       <main className="about-page-main">
-        {/* Full-width header */}
-        <section className="about-page-header">
-          <p className="s-label">My story</p>
-          <h1 className="about-page-title">
-            <span className="tl">
-              <span>About</span>
-            </span>
-            <span className="tl">
-              <span>Me</span>
-            </span>
-          </h1>
-        </section>
-
         {/* Detailed Grid layout */}
         <section className="about-page-body">
           <div className="about-grid">
             <div className="about-bio">
+              {/* Sticky Header */}
+              <div className="about-page-header" style={{ marginBottom: "36px" }}>
+                <p className="s-label">My story</p>
+                <h1 className="about-page-title">
+                  <span className="tl">
+                    <span>About</span>
+                  </span>
+                  <span className="tl">
+                    <span>Me</span>
+                  </span>
+                </h1>
+              </div>
+
               {portfolioData.bio.map((paragraph, idx) => (
                 <p key={idx} dangerouslySetInnerHTML={{ __html: paragraph }} />
               ))}
